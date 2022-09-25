@@ -1,0 +1,3 @@
+# Memory Game
+**HTML, CSS, Vanilla JS**<br />
+Matching card game of personal travel photos coded in HTML, CSS and Vanilla JS. A player flips a pair of cards open by clicking on the cards to find matching images. If a match was found, the cards disappear from the table. If the cards don’t match, the cards are automatically flipped back. The number of moves and time used to find all matching cards is recorded. A player can repeat the game to improve their scores. The design of the game is responsive with click events when playing on desktops, and touch events when playing on smartphones/tablets. 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js" type="module"></script>
+</head>
+<body>
+    <main>
+        <div id="info-box">
+            <button id="btnInfo">i</button>
+        </div>
+        <div class="pop-up">
+            <h3>Welcome!</h3>
+            <p>Click the START button to start the game.</p>
+            <p>Continue by selecting your first pair of cards.</p>
+            <p>When your pair of choice is no match, the cards will flip back.</p>
+            <p>When you find a pair, the cards will disappear from the board.</p>
+        </div>
+        <div id="heading">
+            <h1>Memory game</h1>
+        </div>
+
+        <div id="control">
+            <div id="buttons">
+                <button id="btnStart" class="btn">Start</button>
+                <button id="btnNew" class="btn">New game</button>
+            </div>
+            <div id="messages">
+                <p class="message">Moves: <span id="movesDisplay"></span></p>
+                <p class="message">Time: <span id="timeDisplay"></span> sec</p>                     
+            </div>
+            <div id="result">
+                <p class="message">Best moves: <span id="bestMoves"></span></p>
+                <p class="message">Best time: <span id="bestTime"></span> sec</p>   
+            </div>
+        </div>
+
+        <div id="grid"></div>
+    </main>
+</body>
+</html>

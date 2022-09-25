@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #010080;
+}
+
+#heading {
+    text-align: center;
+}
+
+footer {
+    margin-top: 1rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#info-box {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-top: 0.25rem;
+    padding-right: 35%;
+}
+#btnInfo {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #C9DAEA;
+    color: #010080;
+    border: 2px solid #010080;
+    border-radius: 50%;
+}
+#btnInfo:hover {
+    background-color: #010080;
+    border: 2px solid #C9DAEA;
+    color: white;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+.pop-up {
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 10%;
+    width: 19rem;
+    height: 13rem;
+    display: none;
+    background-color: #C9DAEA;
+    border: 2px solid #010080;
+    color: #010080;
+    padding: 1rem;
+    line-height: 150%;
+    font-size: 0.9rem;
+}
+
+#control {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    justify-content: center;
+}
+#buttons {
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+#messages p {
+    width: 120px;
+}
+.btn {
+    height: 35px;
+    width: 80px;
+    background-color: #C9DAEA;
+    border: 2px solid #010080;
+    color: #010080;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.btn:hover {
+    border: 2px solid #C9DAEA;
+    background-color: #010080;
+    color: white;
+    transition: ease-out 0.3s;
+}
+#btnNew {
+    display: none;
+}
+
+.message {
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px 90px;
+    grid-template-rows: 90px 90px 90px 90px;
+    grid-gap: 0.8rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+.card {
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 90px;
+}
+
+@media (max-width: 912px) {
+
+    #info-box {
+        padding-right: 26%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #heading {
+        margin-top: 1rem;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+
+    #info-box {
+        padding-right: 5%;
+    }
+
+    #grid {
+        grid-template-columns: 75px 75px 75px 75px;
+        grid-template-rows: 75px 75px 75px 75px 75px;
+    }
+
+    img {
+        width: 75px;
+    }
+}
